@@ -1,0 +1,54 @@
+RewriteOptions inherit
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+ErrorDocument 404 /404.php
+RewriteRule ^p/(.*)/(.*)$ ?do=$1&id=$2 [QSA]
+RewriteRule ^p/(.*)$ ?do=$1 [QSA]
+
+RewriteRule ^rss.xml /dq-content/sitemap/rss.php [L]
+RewriteRule ^sitemap.xml /dq-content/sitemap/sitemap.php [L]
+RewriteRule ^sitemap-post.xml /dq-content/sitemap/sitemap-post.php [L]
+RewriteRule ^sitemap-misc.xml /dq-content/sitemap/sitemap-misc.php [L]
+RewriteRule ^sitemap-(.*).xml /dq-content/sitemap/sitemap-other.php?type=$1 [L]
+
+RewriteRule ^movies ?get=movies [QSA]
+RewriteRule ^series ?get=series [QSA]
+RewriteRule ^dramas ?get=dramas [QSA]
+RewriteRule ^animes ?get=animes [QSA]
+RewriteRule ^movie/(.*)/(.*)$ ?do=movie&id=$1&t=$2 [L]
+RewriteRule ^tv/(.*)/(.*)/(.*)$ ?do=tv&id=$1&t=$2&n=$3 [L]
+RewriteRule ^anime/(.*)/(.*)/(.*)$ ?do=anime&id=$1&t=$2&e=$3 [L]
+RewriteRule ^anime/(.*)/(.*)$ ?do=anime&id=$1&t=$2 [L]
+RewriteRule ^drama/(.*)(\/|)$ ?do=drama&term=$1 [L]
+RewriteRule ^drama-detail/(.*)(\/|)$ ?do=drama-detail&term=$1 [L]
+RewriteRule ^play ?do=play [QSA]
+RewriteRule ^search/(.*)$ ?do=search&s=$1 [QSA]
+
+RewriteRule ^([a-zI]+)/movies ?get=movies&language=$1 [QSA]
+RewriteRule ^([a-zI]+)/series ?get=series&language=$1 [QSA]
+RewriteRule ^([a-zI]+)/dramas ?get=dramas&language=$1 [QSA]
+RewriteRule ^([a-zI]+)/animes ?get=animes&language=$1 [QSA]
+RewriteRule ^([a-zI]+)/movie/(.*)/(.*)$ ?do=movie&language=$1&id=$2&t=$3 [L]
+RewriteRule ^([a-zI]+)/tv/(.*)/(.*)/(.*)$ ?do=tv&language=$1&id=$2&t=$3&n=$4 [L]
+RewriteRule ^([a-zI]+)/anime/(.*)/(.*)/(.*)$ ?do=anime&language=$1&id=$2&t=$3&e=$4 [L]
+RewriteRule ^([a-zI]+)/anime/(.*)/(.*)$ ?do=anime&language=$1&id=$2&t=$3 [L]
+RewriteRule ^([a-zI]+)/drama/(.*)(\/|)$ ?do=drama&language=$1&term=$2 [L]
+RewriteRule ^([a-zI]+)/drama-detail/(.*)(\/|)$ ?do=drama-detail&language=$1&term=$2 [L]
+RewriteRule ^([a-zI]+)/play ?do=play&language=$1 [QSA]
+RewriteRule ^([a-zI]+)/search/(.*)$ ?do=search&language=$1&s=$2 [QSA]
+RewriteRule ^([a-zI]+)(\/|)$ ?do=index&language=$1 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(\/|)$ ?do=index [QSA]
+
+</IfModule>
+
+## STOP REFERRER SPAM
+RewriteCond %{HTTP_REFERER} success\-seo\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} semalt\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} best\-seo\-solution\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} best\-seo\-offer\.com [NC]
+RewriteRule .* - [F]
