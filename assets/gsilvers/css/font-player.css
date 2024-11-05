@@ -1,0 +1,353 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?gajup9');
+  src: url('../fonts/icomoon.eot?gajup9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gajup9') format('truetype'),
+    url('../fonts/icomoon.woff?gajup9') format('woff'),
+    url('../fonts/icomoon.svg?gajup9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-b-live:before {
+  content: "\1f534";
+}
+
+.icon-load-2:before {
+  content: "\1f551";
+}
+
+.icon-load-1:before {
+  content: "\1f555";
+}
+
+.icon-s-max:before {
+  content: "\1f5d6";
+}
+
+.icon-s-min:before {
+  content: "\1f5d7";
+}
+
+.icon-atur:before {
+  content: "\1f527";
+}
+
+.icon-star-0:before {
+  content: "\2606";
+}
+
+.icon-star-1:before {
+  content: "\26e4";
+}
+
+.icon-star-2:before {
+  content: "\2605";
+}
+
+.icon-playr:before {
+  content: "\1f4bf";
+}
+
+.icon-play:before {
+  content: "\23f5";
+}
+
+.icon-pause:before {
+  content: "\23f8";
+}
+
+.icon-stop:before {
+  content: "\23f9";
+}
+
+.icon-prev:before {
+  content: "\23ee";
+}
+
+.icon-next:before {
+  content: "\23ed";
+}
+
+.icon-v-4:before {
+  content: "\1f56a";
+}
+
+.icon-v-3:before {
+  content: "\2778";
+}
+
+.icon-v-2:before {
+  content: "\2777";
+}
+
+.icon-v-1:before {
+  content: "\2776";
+}
+
+.icon-v-0:before {
+  content: "\1f568";
+}
+.icon-academic-competition:before {
+  content: "\e900";
+}
+.icon-academic-performance:before {
+  content: "\e901";
+}
+.icon-archery:before {
+  content: "\e902";
+}
+.icon-assembly:before {
+  content: "\e903";
+}
+.icon-association-meeting:before {
+  content: "\e904";
+}
+.icon-badminton:before {
+  content: "\e905";
+}
+.icon-band-competition:before {
+  content: "\e906";
+}
+.icon-band-performance:before {
+  content: "\e907";
+}
+.icon-banquet:before {
+  content: "\e908";
+}
+.icon-baseball:before {
+  content: "\e909";
+}
+.icon-basketball:before {
+  content: "\e90a";
+}
+.icon-bowling:before {
+  content: "\e90b";
+}
+.icon-ceremony:before {
+  content: "\e90c";
+}
+.icon-chapel:before {
+  content: "\e90d";
+}
+.icon-cheer-and-dance:before {
+  content: "\e90e";
+}
+.icon-cheerleading:before {
+  content: "\e90f";
+}
+.icon-cheerleading-and-dance:before {
+  content: "\e90f";
+}
+.icon-chess:before {
+  content: "\e910";
+}
+.icon-chorus:before {
+  content: "\e911";
+}
+.icon-cinema:before {
+  content: "\e912";
+}
+.icon-class:before {
+  content: "\e913";
+}
+.icon-bass-fishing:before {
+  content: "\e914";
+}
+.icon-cricket:before {
+  content: "\e915";
+}
+.icon-cross-country:before {
+  content: "\e916";
+}
+.icon-dance:before {
+  content: "\e917";
+}
+.icon-debate:before {
+  content: "\e918";
+}
+.icon-diving:before {
+  content: "\e919";
+}
+.icon-dodgeball:before {
+  content: "\e91a";
+}
+.icon-drama-competition:before {
+  content: "\e91b";
+}
+.icon-drama-performance:before {
+  content: "\e91c";
+}
+.icon-esports:before {
+  content: "\e91d";
+}
+.icon-event:before {
+  content: "\e91e";
+}
+.icon-fencing:before {
+  content: "\e91f";
+}
+.icon-field-hockey:before {
+  content: "\e920";
+}
+.icon-field:before {
+  content: "\e921";
+}
+.icon-flag-football:before {
+  content: "\e922";
+}
+.icon-football:before {
+  content: "\e923";
+}
+.icon-golf:before {
+  content: "\e924";
+}
+.icon-graduation:before {
+  content: "\e925";
+}
+.icon-gymnastics:before {
+  content: "\e926";
+}
+.icon-ice-hockey:before {
+  content: "\e927";
+}
+.icon-interview:before {
+  content: "\e928";
+}
+.icon-jrotc:before {
+  content: "\e929";
+}
+.icon-lacrosse:before {
+  content: "\e92a";
+}
+.icon-literary-event:before {
+  content: "\e92b";
+}
+.icon-literature:before {
+  content: "\e92c";
+}
+.icon-meeting:before {
+  content: "\e92d";
+}
+.icon-music-performance:before {
+  content: "\e92e";
+}
+.icon-music:before {
+  content: "\e92f";
+}
+.icon-news:before {
+  content: "\e930";
+}
+.icon-other-activity:before {
+  content: "\e931";
+}
+.icon-other-sports:before {
+  content: "\e932";
+}
+.icon-pep-rally:before {
+  content: "\e933";
+}
+.icon-performing-arts:before {
+  content: "\e934";
+}
+.icon-practice:before {
+  content: "\e935";
+}
+.icon-press-conference:before {
+  content: "\e936";
+}
+.icon-track-and-field:before {
+  content: "\e937";
+}
+.icon-riflery:before {
+  content: "\e938";
+}
+.icon-robotics:before {
+  content: "\e939";
+}
+.icon-rugby:before {
+  content: "\e93a";
+}
+.icon-service:before {
+  content: "\e93b";
+}
+.icon-show:before {
+  content: "\e93c";
+}
+.icon-highlight:before {
+  content: "\e93c";
+}
+.icon-signing-day:before {
+  content: "\e93d";
+}
+.icon-skiing:before {
+  content: "\e93e";
+}
+.icon-snowboarding:before {
+  content: "\e93f";
+}
+.icon-soccer:before {
+  content: "\e940";
+}
+.icon-softball:before {
+  content: "\e941";
+}
+.icon-speech-and-debate:before {
+  content: "\e942";
+}
+.icon-speech:before {
+  content: "\e943";
+}
+.icon-spirit:before {
+  content: "\e944";
+}
+.icon-sports-show:before {
+  content: "\e945";
+}
+.icon-swimming-and-diving:before {
+  content: "\e946";
+}
+.icon-swimming:before {
+  content: "\e947";
+}
+.icon-tennis:before {
+  content: "\e948";
+}
+.icon-track:before {
+  content: "\e949";
+}
+.icon-unified-sports:before {
+  content: "\e94a";
+}
+.icon-volleyball:before {
+  content: "\e94b";
+}
+.icon-water-polo:before {
+  content: "\e94c";
+}
+.icon-weightlifting:before {
+  content: "\e94d";
+}
+.icon-wheelchair-sports:before {
+  content: "\e94e";
+}
+.icon-wrestling:before {
+  content: "\e94f";
+}

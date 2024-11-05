@@ -1,0 +1,118 @@
+.video-background {
+ position:relative;
+ width:100%;
+ min-height:380px;
+ height:auto;
+ overflow:hidden;
+ margin-bottom:-60px
+}
+@media (min-width:545px) {
+ .video-background {
+  min-height:400px;
+  margin-bottom:-90px
+ }
+}
+@media (min-width:992px) {
+ .video-background {
+  min-height:500px;
+  margin-bottom:-115px
+ }
+}
+.video-background video {
+ width:1244px;
+ height:380px;
+ opacity:.3;
+ position:absolute;
+ left:50%;
+ -webkit-transform:translateX(-50%);
+ transform:translateX(-50%)
+}
+@media (min-width:545px) {
+ .video-background video {
+  width:1480px;
+  height:400px
+ }
+}
+@media (min-width:992px) {
+ .video-background video {
+  width:1500px;
+  height:auto;
+  min-height:500px
+ }
+}
+@media (min-width:1244px) {
+ .video-background video {
+  width:120%
+ }
+}
+.video-background .gradient {
+ position:absolute;
+ top:0;
+ left:0;
+ background-image:linear-gradient(180deg,rgba(14,14,14,0.1),#999999);
+ width:100%;
+ height:100%
+}
+.video-background .intro {
+ position:relative;
+ text-align:center;
+ padding:166px 16px 55px
+}
+.video-background .intro h1 {
+ font-family:"Roboto Condensed",sans-serif;
+ font-size:24px;
+ line-height:26px;
+ font-weight:500;
+ padding:0;
+ margin:0;
+ background: 50% 100% / 50% 50% no-repeat
+             radial-gradient(ellipse at bottom, #f00, transparent, transparent);
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ animation: reveal 3000ms ease-in-out forwards 200ms,
+            glow 2500ms linear infinite 2000ms;
+            
+}
+
+ @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #B77DFF;
+    }
+  }
+  
+@media (min-width:545px) {
+ .video-background .intro h1 {
+  font-size:40px;
+  line-height:42px
+ }
+}
+.video-background .intro p {
+ font-family:"Roboto Condensed",sans-serif;
+ font-size:14px;
+ line-height:16px;
+ color:#0e0e0e;
+ font-weight:500;
+ padding:7px 0 0
+}
+@media (min-width:545px) {
+ .video-background .intro p {
+  max-width:440px;
+  margin:0 auto
+ }
+}
+@media (min-width:992px) {
+ .video-background .intro p {
+  max-width:520px
+ }
+}
+
+
